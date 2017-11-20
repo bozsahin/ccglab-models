@@ -19,6 +19,7 @@ In each folder:
 
 Other files are auxiliary.
 
-These grammars are separated from <a href="https://github.com/bozsahin/ccglab-grammars">ccglab-grammars</a> source code for easier update.
+These grammars are separated from <a href="https://github.com/bozsahin/ccglab-grammars">ccglab-grammars</a> source code
+to address two different worlds easier, namely linguists and computational linguists/cognitive scientists.
 
 -Cem Bozsahin
