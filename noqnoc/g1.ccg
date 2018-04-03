@@ -19,15 +19,15 @@ loves v := (s\*np)/*np : \x\y.!love y x;    % bad
 % subjects  and objects -- good and bad type-raised
 
 john n := s/(s\np) : \p.p !john;
-john n := s/(s\np) : !john;    % bad
-john n := (s\np)\((s\np)/np) : \p.p !john;
-john n := (s\np)\((s\np)/np) : !john;    % bad
+john n := s\(s/np) : \p.p !john;  %TR but useless
+john n := (s\np)\((s\np)/np) : \p.p !john; 
+john n := (s\np)\((s\np)/np) : \p\x.!john p x ; %bad TR lf-wise
 mary n := s/(s\np) : \p.p !mary;
-mary n := s/(s\np) : !mary;    % bad
-mary n := (s\np)\((s\np)/np) : \p.p !mary;
-mary n := (s\np)\((s\np)/np) : !mary;    % bad
+mary n := s\(s/np) : !mary;    % TR but useless
+mary n := (s\np)\((s\np)/np) : \p.p !mary;    
+mary n := (s\np)\((s\np)/np) : \p\x.!mary p x ; %bad TR lf-wise
 
-% Quinean confusion
+% Quinean confusion: syn type is OK but LF is not
 
 john n := s/(s\np) : \p.p !dog;
 john n := (s\np)\((s\np)/np) : \p.p !dog;
