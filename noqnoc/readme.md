@@ -2,7 +2,7 @@ There are two ways to replicate the experiment.
 
 I. Doint is using the test suite provided.
   After getting into ccglab, do
-  1. (load "test-suite.lisp") 
+  1. (load "testsuite.lisp") 
   2. (test-noqnoc)
 
 II. Doing it manually, which is better for understanding the modelling workflow.
@@ -29,6 +29,7 @@ II. Doing it manually, which is better for understanding the modelling workflow.
     I stopped dribbling after step 9. I zscored the new grammar for comparison.
 
     (dribble "fn") is Lisp's way of saving all the commands and their output in a file called fn.
+    
     (dribble) turns it off.
 
 enjoy.
