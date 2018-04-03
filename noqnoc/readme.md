@@ -18,7 +18,7 @@ II. Doing it manually, which is better for understanding the modelling workflow.
 7. In ccglab, did (update-model "g1" 10 1.0 1.0 :load t).
     It iterates over g1.sup 10 times, to update the parameters in g1.ind.
     1.0 and 1.0 are learning parameters alpha0 and c. NB. the manual.
-7.1 do (show-training) to see the difference.
+    Did (show-training) to see the difference.
 8. In ccglab, did (save-training "new-g1.ind").
     It saves the trained grammar as new-g1.ind. 
 9. In ccglab, do (load-model "new-g1") to start using the trained grammar.
