@@ -28,9 +28,9 @@ II. Doing it manually, which is better for understanding the modelling workflow.
     in ccglab as (dribble "g1.trained...out") before i ran the experiment.
     I stopped dribbling after step 9. I zscored the new grammar for comparison.
 
-    (dribble "fn") is Lisp's way of saving all the commands and their output in a file called fn.
+(dribble "fn") is Lisp's way of saving all the top commands and their output in a file called fn.
     
-    (dribble) turns it off.
+(dribble) turns it off.
 
 enjoy.
 -cem
