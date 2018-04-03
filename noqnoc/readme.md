@@ -1,11 +1,11 @@
 There are two ways to replicate the experiment.
 
-I. Doint is using the test suite provided.
+I. Doing is using the test suite provided.
   After getting into ccglab, do
   1. (load "testsuite.lisp") 
   2. (test-noqnoc)
 
-II. Doing it manually, which is better for understanding the modelling workflow.
+II. Doing it manually, which is better for understanding the modeling workflow.
 
 1. Created the text file g1.ccg. It is the grammar we wish to train.
 2. Created the text file g1.supervision. It is the data we wish to train on.
