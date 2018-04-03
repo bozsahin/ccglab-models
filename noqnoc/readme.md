@@ -1,6 +1,6 @@
 There are two ways to replicate the experiment.
 
-I. Doing is using the test suite provided.
+I. Doing it using the test suite provided:
   After getting into ccglab, do
   1. (load "testsuite.lisp") 
   2. (test-noqnoc)
