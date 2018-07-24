@@ -1,0 +1,106 @@
+===================
+I am called as: /home/cem/ccglab/bin/ccglab.nohup.sbcl 16000 64 g1 t 5 0.5 1.0 t1.out
+            at: Tue Jul 24 17:16:06 EEST 2018
+Log goes to   : t1.out
+I will call sbcl as: /usr/bin/sbcl --dynamic-space-size 16000
+It will call train-nohup-sbcl in /home/cem/ccglab/bin/train-nohup-sbcl.lisp as: (train-nohup-sbcl "g1" 64 t "g1.ind.nohupped.5N.0.5a.1.0c" 5 0.5 1.0)
+===================
+This is SBCL 1.2.15-1.fc23, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+OOV is reset (OOV errors reported)
+All LFs will be shown
+*Beamp* = NIL  *Beam-exp* = 0.9
+*Beamp* = NIL  *Beam-exp* = 0.9
+
+======================= l o a d i n g =======================================
+; loading #P"/home/cem/ccglab-models/noqnoc/g1.ind"
+
+Project [g1] is assumed to consist of
+-----------------------------------------------------------------------------
+  CCG grammar source : g1.ccg $
+    Its token form   : g1.lisptokens $
+  Deduction grammar  : g1.ded $ (derived from g1.lisptokens)
+  Induction grammar  : g1.ind #
+  Supervision source : g1.sup ^
+  Model-specific code: g1.lisp ^
+   and other model-specific files you may create.
+       *CCG-GRAMMAR* : set from g1.ind
+  *LEX-RULES-TABLE*  : set from g1.ind
+Expected files       : $ for deduction, # for induction, ^ for model development
+=============================================================================
+
+Supervision file loaded: g1.sup
+Done. use (show-training/save-training) to see/save the results
+Evaluation took:
+  3.131 seconds of real time
+  3.119429 seconds of total run time (3.095537 user, 0.023892 system)
+  [ Run times consist of 0.024 seconds GC time, and 3.096 seconds non-GC time. ]
+  99.62% CPU
+  6 forms interpreted
+  7,513,897,143 processor cycles
+  224,425,728 bytes consed
+  
+The rule set used in the experiment:
+To change a switch, use (setf <switchname> <value>)
+	      where <value> is T (on) or NIL (off)
+	  *f-apply*     T
+	  *b-apply*     T
+	  *f-comp*      T
+	  *b-comp*      T
+	  *fx-comp*     T
+	  *bx-comp*     T
+	  *f-sub*       T
+	  *b-sub*       T
+	  *fx-sub*      T
+	  *bx-sub*      T
+          *f-subbar*    NIL
+	  *b-subbar*    NIL
+	  *fx-subbar*   NIL
+	  *bx-subbar*   NIL
+	  *f-subcomp*   T
+	  *b-subcomp*   T
+	  *fx-subcomp*  T
+	  *bx-subcomp*  T
+          *f2-comp*     T
+	  *b2-comp*     T
+	  *fx2-comp*    T
+	  *bx2-comp*    T
+	  *f2-sub*      T
+	  *b2-sub*      T
+	  *fx2-sub*     T
+	  *bx2-sub*     T
+	  *f3-comp*     T
+	  *b3-comp*     T
+	  *fx3-comp*    T
+	  *bx3-comp*    T
+
+Training parameters: N = 5 alpha0 = 0.5 c = 1.0 n = 6  *Beamp* = NIL  *Beam-exp* = 0.9
+
+Model parameters before and after training
+================================================
+key   lex             initial  final    diff 
+------------------------------------------------
+1     KNOWS             1.0 3.468151  (2.468151)
+2     KNOWS             1.0 2.018061  (1.018061)
+3     KNOWS             1.0 .1772832  (-.822717)
+4     KNOWS             1.0 -.645644  (-1.64564)
+5     LOVES             1.0 3.463425  (2.463425)
+6     LOVES             1.0 -1.50765  (-2.50765)
+7     JOHN              1.0 2.865606  (1.865606)
+8     JOHN              1.0 1.775491  (0.775491)
+9     JOHN              1.0 2.073615  (1.073615)
+10    JOHN              1.0 .1812613  (-.818739)
+11    MARY              1.0 2.583129  (1.583129)
+12    MARY              1.0 1.921111  (.9211111)
+13    MARY              1.0 2.278426  (1.278426)
+14    MARY              1.0 .0115407  (-.988459)
+15    JOHN              1.0 -.856867  (-1.85687)
+16    JOHN              1.0 .1812613  (-.818739)
+17    MARY              1.0 -.702817  (-1.70282)
+18    MARY              1.0 .0115407  (-.988459)
+================================================
