@@ -47,4 +47,19 @@
      (SYN
       ((((BCAT S) (FEATS NIL)) (DIR BS) (MODAL ALL) ((BCAT NP) (FEATS NIL)))
        (DIR FS) (MODAL ALL) ((BCAT NP) (FEATS NIL))))
-     (SEM (LAM X (LAM Y (("SEES" X) Y)))) (PARAM 1.0))))
+     (SEM (LAM X (LAM Y (("SEES" X) Y)))) (PARAM 1.0))
+    ((KEY 12) (PHON WANTS) (MORPH V)
+     (SYN
+      ((((BCAT S) (FEATS NIL)) (DIR BS) (MODAL ALL) ((BCAT NP) (FEATS NIL)))
+       (DIR FS) (MODAL ALL) ((BCAT VP) (FEATS NIL))))
+     (SEM (LAM P (LAM X (("WANT" (P X)) X)))) (PARAM 1.0))
+    ((KEY 13) (PHON TO) (MORPH I)
+     (SYN
+      (((BCAT VP) (FEATS NIL)) (DIR FS) (MODAL ALL) ((BCAT IV) (FEATS NIL))))
+     (SEM (LAM P P)) (PARAM 1.0))
+    ((KEY 14) (PHON STUDY) (MORPH V) (SYN ((BCAT IV) (FEATS NIL)))
+     (SEM (LAM X ("STUDY" X))) (PARAM 1.0))
+    ((KEY 15) (PHON READ) (MORPH V)
+     (SYN
+      (((BCAT IV) (FEATS NIL)) (DIR FS) (MODAL ALL) ((BCAT NP) (FEATS NIL))))
+     (SEM (LAM X (LAM Y (("READ" X) Y)))) (PARAM 1.0))))
