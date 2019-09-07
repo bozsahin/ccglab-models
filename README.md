@@ -1,6 +1,8 @@
 # ccglab-models
 models for parser training and wide-coverage/ a companion to ccglab and ccglab-grammars
 
+<b> This is a legacy repo. It is not maintained. The new location is ccglab-databases.</b>
+
 You need to install <a href="https://github.com/bozsahin/ccglab">ccglab</a> repo to computationally try the
 models included here.
 
